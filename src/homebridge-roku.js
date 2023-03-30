@@ -92,6 +92,7 @@ class RokuAccessory {
       )
       .setCharacteristic(Characteristic.Model, this.info.modelName)
       .setCharacteristic(Characteristic.SerialNumber, this.info.serialNumber)
+      .setCharacteristic(Characteristic.Category, 31)
       .setCharacteristic(
         Characteristic.FirmwareRevision,
         this.info.softwareVersion || plugin.version,
